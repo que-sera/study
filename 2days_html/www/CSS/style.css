@@ -21,3 +21,20 @@ h3 {
     border-left-width: 6px;
     border-left-color: #6b3008;
 }
+
+/* ページ先頭へ*/
+.pagetop {
+    text-align: right;
+}
+
+/* copylight*/
+.copylight {
+    border-top: solid 3px #000000;
+    text-align: center;
+}
+
+/* プロフィールは背景色・文字色を変更*/
+#profile {
+    background-color: #6b3008;
+    color: #ffffff;
+}
