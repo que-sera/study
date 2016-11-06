@@ -2,6 +2,7 @@
 /* body */
 body {
     background-color: #fff9de;
+    margin: 0;
 }
 
 /* サブタイトル*/
@@ -17,9 +18,8 @@ h2 {
 }
 
 h3 {
-    border-left-style: solid;
-    border-left-width: 6px;
-    border-left-color: #6b3008;
+    border-left: solid 6px #6b3008;
+    padding: 6px
 }
 
 /* ページ先頭へ*/
@@ -33,8 +33,65 @@ h3 {
     text-align: center;
 }
 
+/*artice*/
+.article {
+    padding: 32px 16px;
+}
+
 /* プロフィールは背景色・文字色を変更*/
 #profile {
     background-color: #6b3008;
     color: #ffffff;
 }
+
+/* section */
+section {
+    margin: 48px 0;
+}
+
+/*出演者のsection*/
+.peformer {
+    margin : 0 0 24px;
+}
+
+/* 表 */
+table {
+    border: solid 1px #999999;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+}
+th, td {
+    border: solid 1px #999999;
+    padding: 16px;
+}
+th { 
+    background-color: #62d5e8;
+}
+
+/* list */
+ol li {
+    list-style: upper-roman;
+}
+
+/*ナビゲーション*/
+.navigation ul {
+    background-color: #000000;
+    margin: 0;
+    padding: 4px;
+    text-align: center;
+}
+.navigation ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 8px;
+}
+.navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+    
