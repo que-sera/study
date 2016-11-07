@@ -42,7 +42,15 @@ h3 {
 #profile {
     background-color: #6b3008;
     color: #ffffff;
+    max-width: 600px;
 }
+
+/* コンテンツ幅の上限を設定 */
+#profile {
+    max-width: 600px;
+    margine: 0 auto;
+}
+
 
 /* section */
 section {
@@ -114,4 +122,6 @@ ol li {
 .mainvisual img{
     display: block;
     margin: 0 auto;
+    max-width: 100%;
+    height: auto;
 }
