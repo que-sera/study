@@ -50,10 +50,21 @@ section {
 }
 
 /*出演者のsection*/
-.peformer {
+.performer {
     margin : 0 0 24px;
+    overflow: hidden;    
+}
+.performer img {
+    float: left;
+    margin: 0 16px 0 0;
 }
 
+.performer h4 {
+    margin: 0 0 0 0.5em;
+}
+.performer p {
+    margin: 0;
+}
 /* 表 */
 table {
     border: solid 1px #999999;
@@ -94,4 +105,13 @@ ol li {
     text-decoration: underline;
 }
 
-    
+/* メインビジュアル */
+.mainvisual {
+    background-color: #62d5e8;
+    border-bottom: solid 3px #000000;
+}
+
+.mainvisual img{
+    display: block;
+    margin: 0 auto;
+}
