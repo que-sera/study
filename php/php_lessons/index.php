@@ -1,20 +1,17 @@
 <?php
 
-// コメント
-# コメント
 /*
-コメント
-コメント
-コメント
+変数: データにつけるラベル
+
+データ型:
+- 文字列：string
+- 数値 integer float
+- 論理値 boolean / true false
+- 配列
+- オブジェクト
+- null
 */
 
-echo "hello from the TOP!";
-echo "hello from the TOP! again";
-?>
-
-<!DOCTYPE html>
-<html lang="ja">
-    <body>
-        <p>Hello World<?php echo "from PHP"; ?></p>
-    </body>
-</html>
+$msg = "hello from the TOP!";
+echo $msg;
+var_dump($msg);
