@@ -1,13 +1,10 @@
 <?php
 
-// 定数: 変更されない値につけるラベル
+// 数値型の演算
 
+// + - * / % **(PHP5.6-)
 
-define("MY_EMAIL", "taguchi@dotinstall.com");
-
-echo MY_EMAIL;
-//MY_EMAIL = "hogehoge";
-
-var_dump(__LINE__);//10
-var_dump(__FILE__);
-var_dump(__DIR__);
+$x = 10 % 3; //1
+$y = 30.2 / 4 //7.55
+var_dump($x);
+var_dump($y);
