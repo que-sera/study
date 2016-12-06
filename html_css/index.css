@@ -1,14 +1,8 @@
 /*
-セレクタ
-a, b
-a b
-a > b
-a + b
-ab
+属性セレクタ
 */
 
-/* h1, p { color: skyblue; } */
-/* div span { color: skyblue; } */
-/* div > span { color: skyblue; } */
-/* p + p { color: skyblue; } */
-p.points { color: skyblue; }
+
+/*a[title] { color: skyblue; }*/
+/*a[href="http://google.com"] { color: orange; }*/
+a[class~="search"] { color: violet; }
