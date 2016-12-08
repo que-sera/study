@@ -1,16 +1,13 @@
 <?php
-// 文字列
-// "" 特殊文字(\n, \t) 変数
-// ' '
 
-//$name = "taguchi";
-//$s1 = "hello $name!\nhello again!";
-//$s1 = "hello {$name}!\nhello again!";
-//$s1 = "hello ${name}!\nhello again!";
-//$s2 = 'hello $name!\nhello again!';
-//var_dump($s1);
-//var_dump($s2);
+// if 条件
 
-// 連結
-$s = "hello" . "world";
-var_dump($s);
+$score = 45;
+
+if($score > 80) {
+  echo "great!";
+} elseif($score > 60){
+  echo "good!";
+} else {
+  echo "so so ...";
+}    
