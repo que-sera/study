@@ -1,17 +1,17 @@
 /*
 セレクタ
-擬似要素
+詳細度
+(a) style=""
+(b) id
+(c) 属性/擬似クラス
+(d) 要素/擬似要素
 */
 
-/*p:first-line {color: skyblue; }*/
-/*p:first-letter {color: skyblue; }*/
-
-p:before {
-content: "-->"
-}
-
-p:after {
-content: "<--"
-}
-
-
+/* 0, 0, 0, 1 */
+a { color: skyblue !important; }
+/* 0, 0, 1, 1 */
+a.link { color: pink; }
+/* 0, 0, 1, 1 */
+a.search { color: orange; }
+/* 0, 1, 0, 1 */
+a#site { color: blue; }
