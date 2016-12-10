@@ -1,17 +1,19 @@
 /*
 セレクタ
-詳細度
-(a) style=""
-(b) id
-(c) 属性/擬似クラス
-(d) 要素/擬似要素
-*/
+値
+− 長さ
+  − px
+  - em
+  - %
+- 名前
 
-/* 0, 0, 0, 1 */
-a { color: skyblue !important; }
-/* 0, 0, 1, 1 */
-a.link { color: pink; }
-/* 0, 0, 1, 1 */
-a.search { color: orange; }
-/* 0, 1, 0, 1 */
-a#site { color: blue; }
+
+body { font-size: 16px; }
+h1 { font-size: 2em; } /* 32 */
+h2 { font-size: 150%; } /* 24px */
+
+h1 { color: blue; }
+h1 { color: #00f; }
+h1 { color: #0000ff; }
+h1 { color: rgb(0, 0, 255); }
+h1 { color: rgb(0%, 0%, 100%); }
