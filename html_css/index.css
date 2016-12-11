@@ -1,12 +1,16 @@
 /*
-ボックスモデル
-*/
+境界線
 
-body, html { height: 100%;}
+
+border-color:
+border-width:
+border-style: solid / dotted / dashed / double / inset / outset */
+
 div {
-    background: silver;
-   /* width: 200px;*/
-    width: 50%;
-    /*height: 100px;*/
-    height: 50%;
+/*border-color: orange;
+border-width:4px;
+border-style: dotted;
+border: orange 4px dotted;}
+*/
+border-top: orange 4px dotted;
 }
