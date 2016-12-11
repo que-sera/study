@@ -1,19 +1,12 @@
 /*
-セレクタ
-値
-− 長さ
-  − px
-  - em
-  - %
-- 名前
+ボックスモデル
+*/
 
-
-body { font-size: 16px; }
-h1 { font-size: 2em; } /* 32 */
-h2 { font-size: 150%; } /* 24px */
-
-h1 { color: blue; }
-h1 { color: #00f; }
-h1 { color: #0000ff; }
-h1 { color: rgb(0, 0, 255); }
-h1 { color: rgb(0%, 0%, 100%); }
+body, html { height: 100%;}
+div {
+    background: silver;
+   /* width: 200px;*/
+    width: 50%;
+    /*height: 100px;*/
+    height: 50%;
+}
