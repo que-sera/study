@@ -1,10 +1,13 @@
 /*
-padding-top: 10px;
-padding-right: 10px;
-padding-left: 10px;
-padding-bottom: 10px;
+margin:
+marginの相殺
 
-padding:
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 10px;
+margin-bottom: 10px;
+
+margin:
     all
     top/bottom rihgt/left
     top right/left bottom
@@ -13,8 +16,11 @@ padding:
 
 body { margin: 0;}
 
-div {
+div#box1 {
     background: silver;
-    /*padding: 10px 50px;*/
-    padding: 10px 20px 30px 40px;
+    margin: 10px 20px 30px;
+}
+div#box2 {
+    background: orange;
+    margin: 20px;
 }
