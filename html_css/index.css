@@ -1,13 +1,8 @@
 /*
-list
-- list-style-type: disc/circle/square/decimal/lower-alpha
-- list-style-image:
-- list-style-position: inside/outside
-- list-style:
+cursor
 */
 
-ul {
-/*    list-style: inside decimal; 
-    list-style: outside lower-alpha;*/
-    circle;
-    }
+.help { cursor: help; }
+.dragme { cursor: move; }
+.clickme { cursor: pointer; }
+.smile { cursor: auto; }
