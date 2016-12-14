@@ -2,13 +2,15 @@
 background
 */
 
-body {
- /* background-color: silver;
-    background-image: url('mainvisual.png');
-    background-repeat: no-repeat;
-    background-repeat: repeat-y; 
-    background-position: 10px 10px;
-    background-attachment: scroll;
-    background-attachment: fixed; */
-    background: url('mainvisual.png') no-repeat fixed;
+h1, p, span, a {
+    border: 1px solid #ddd;
+}
+
+h1, p {
+    width: 120px;
+    displya: inline;
+}
+
+span {
+    display: none;
 }
