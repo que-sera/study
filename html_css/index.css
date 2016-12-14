@@ -1,16 +1,17 @@
 /*
-background
+display: table
 */
 
-h1, p, span, a {
-    border: 1px solid #ddd;
+.container {
+    display: table;
+    width: 300px;
 }
 
-h1, p {
-    width: 120px;
-    displya: inline;
+.box {
+    display: table-cell;
+    width: 100px;
 }
+.gray { background: gray; }
+.silver { background: silver; }
+.orange { background: orange; }
 
-span {
-    display: none;
-}
