@@ -1,16 +1,3 @@
 /*
-float
-clear
+
 */
-
-h1, h2, p, img, {
-    border:1px solid #ddd;
-}
-
-img {
-    float: right;
-    width: 300px;
-}
-
-h2 {clear: right;
-}
