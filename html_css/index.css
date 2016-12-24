@@ -1,10 +1,19 @@
 /*
-透明
+属性セレクタ
+
+- a[href]
+- a[href="foo"]
+- a[href-="foo"]
+
+- a[href^="foo"] fooから始まる
+- a[href$="foo"] fooで終わる
+- a[href*="foo"] fooを含む
+
 */
 
-body { background: skyblue;}
+/*a[href^="http"] { color: orange;} */
 
-img {
-    border: 7px solid blue;
-    opacity: 0.3;
-}
+/*a[href$=".com"] { color: orange;} */
+
+a[href*="co.jp"] { color: orange;} 
+
