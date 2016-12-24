@@ -1,34 +1,10 @@
 /*
-色
-- rgba
-    - Red
-    - Green
-    - Blue
-    - Alpha (0-1)
-- hsl / hsla
-    - Hue 0-360
-    - Saturation 0-100%
-    - Lightness 0-100%
-    - Alpha (0-1)
+透明
 */
 
-div {
-    width:100px;
-    height:50px;
-}
+body { background: skyblue;}
 
-#box1 {
-    background: rgb(255, 100, 100);
-}
-
-#box2 {
-    background: rgba(255, 100, 100, .2);
-}
-
-#box3 {
-    background: hsla(210, 100%, 50%, .7);
-}
-
-#box4 {
-    background: hsla(210, 100%, 40%, .7);
+img {
+    border: 7px solid blue;
+    opacity: 0.3;
 }
