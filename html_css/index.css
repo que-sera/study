@@ -1,19 +1,17 @@
 /*
-属性セレクタ
-
-- a[href]
-- a[href="foo"]
-- a[href-="foo"]
-
-- a[href^="foo"] fooから始まる
-- a[href$="foo"] fooで終わる
-- a[href*="foo"] fooを含む
-
+擬似クラス
+- :first-child
 */
 
-/*a[href^="http"] { color: orange;} */
+/*li:last-child*/
+/*li:nth-child(3)*/
+/*li:nth-child(odd)*/
+/*li:nth-child(even)*/
+/*li:nth-child(3n+1)*/
+/*li:nth-last-child(4)*/
+li:only-child 
+{
+    background: violet;
+}
 
-/*a[href$=".com"] { color: orange;} */
-
-a[href*="co.jp"] { color: orange;} 
-
+/*li:nth-child
