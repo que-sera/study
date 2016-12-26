@@ -1,17 +1,13 @@
 /*
 擬似クラス
-- :first-child
+
 */
 
-/*li:last-child*/
-/*li:nth-child(3)*/
-/*li:nth-child(odd)*/
-/*li:nth-child(even)*/
-/*li:nth-child(3n+1)*/
-/*li:nth-last-child(4)*/
-li:only-child 
+/*p:first-of-type*/
+/*p:last-of-type*/
+/*p:nth-of-type(3)*/
+/*p:nth-of-type(4)*/
+h2:only-of-type
 {
     background: violet;
 }
-
-/*li:nth-child
