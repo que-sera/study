@@ -1,13 +1,14 @@
 /*
-擬似クラス
+角丸
 
 */
+div {
+    width: 200px;
+    height: 200px;
+    background: skyblue url('mainvisual.png');
+    /*border-radius: 30px / 15px;*/
+    /*border-bottom-right-radius: 30px;*/
+    /*border-radius: 10px 20px 30px;*/
+    border-radius: 50%;
 
-/*li:not(.target)*/
-/*li:empty*/
-/*input[type="text"]:enabled*/
-/*input[type="text"]:disabled*/
-input[type="checkbox"]:checked + label
-{
-    background: violet;
 }
