@@ -2,15 +2,12 @@
 
 // 関数
 
-function sayHi($name = "tagchi"){
-    //echo "hi! ". $name;
-    return "hi! " . $name;
+$lang ="ruby";
+
+function sayHi($name){
+    $lang = "php";
+    echo "hi! $name from $lang";
 }
 
-//sayHi();
-//sayHi("Tom");
-//sayHi("Bob");
-//sayHi();
-
-$s = sayHi();
-var_dump($s);
+sayHi("Tom");
+var_dump($lang); //ruby
