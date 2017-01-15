@@ -1,25 +1,32 @@
 <?php
 
-// User
+// 継承
 
 class User {
-    //property
     public $name;
-    
-    // constructor
     public function __construct($name) {
         $this->name = $name;
     }
     
-    // method
-    public function sayHi(){
+   final public function sayHi(){
         echo "hi, i am $this->name!";
     }
 }
+    
+    class AdminUser extends User {
+     public function sayHello(){
+         echo "hello from Admin!";
+     }
+   // override
+    public function sayHi() {
+        echo "[admin] hi, i am $this->name!";
+    
+    }
+    }
     $tom = new User("Tom");
-    $bob = new User("Bob");
-    
-    echo $tom->name; //Tom
-    $bob->sayHi(); // hi, i am Bob!
-    
+    $steve = new AdminUser("Steve");
+    //echo $steve->name; 
+    $tom->sayHi();
+    $steve->sayHi();
+    //$steve->sayHello();
     
