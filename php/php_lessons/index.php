@@ -1,19 +1,25 @@
 <?php
 
-// 関数
+// User
 
-$x = 5.6;
-//echo ceil($x); //6
-//echo floor($x); // 5
-//echo round($x); // 6
-//echo rand(1, 10);
-
-$s1 = "hello";
-$s2 = "Cat";
-//echo strlen($s1); //s
-//echo mb_strlen($s2); //2
-//printf("%s - %s -%.3f", $s1, $s2, $x);
-
-$colors = ["red", "blue", "pink"];
-echo count($colors);
-echo implode("@",$colors);
+class User {
+    //property
+    public $name;
+    
+    // constructor
+    public function __construct($name) {
+        $this->name = $name;
+    }
+    
+    // method
+    public function sayHi(){
+        echo "hi, i am $this->name!";
+    }
+}
+    $tom = new User("Tom");
+    $bob = new User("Bob");
+    
+    echo $tom->name; //Tom
+    $bob->sayHi(); // hi, i am Bob!
+    
+    
