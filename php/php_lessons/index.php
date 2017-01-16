@@ -1,30 +1,25 @@
 <?php
 
-// アクセス権
-// - pribate: そのそのクラス内からのみアクセス可能
-// - protected: そのクラス＋親子クラスからアクセス可能
-// - public: どこらでもアクセス可能
+//　static
 
 class User {
-    //public $name;
-    //private $name;
-    protected $name;
-        public function __construct($name) {
+    public $name;
+    public static $count = 0;
+    public function __construct($name) {
         $this->name = $name;
+        self::$count++;
     }
-    
     public function sayHi(){
         echo "hi, i am $this->name!";
     }
+    public static function getMessage(){
+        echo "hello from User class!";
 }
-    class AdminUser extends User {
-     public function sayHello(){
-         echo "hello from $this->name";
-     }
-     
-    }
+}
 
-    $tom = new User("Tom");
-    //echo $tom->name;
-    $steve = new AdminUser("Steve");
-    $steve->sayHello();
+//User::getMessage();
+
+$tom= new User("Tom");
+$bob= new User("Bob");
+
+echo User::$count; //2
