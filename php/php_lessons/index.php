@@ -1,22 +1,19 @@
 <?php
 
-// interface
+// require: fatal error
+// reqire_once
 
-interface sayHi {
-    public function sayHi();
-}
 
-interface sayHello {
-    public function sayHello();
-}
+// require "User.class.php";
 
-class User implements sayHi, sayHello {
-    public function sayHi(){
-        echo"hi!";
-    }
-    public function sayHello(){
-        echo"hello!";
-    }        
-}   
-        
+// include: waring
+// include_once
 
+// autoload
+
+spl_autoload_register(function($class){
+    require $class. ".class.php";
+});
+
+$bob = new User("Bob");
+$bob->sayHi();
