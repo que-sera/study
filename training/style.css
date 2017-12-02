@@ -1,0 +1,28 @@
+/*gNavi*/
+#gNavi{
+    list-style: none;
+    overflow: hiden;
+}
+
+#gNavi li{
+    float:left;
+    border-right: 1px solid #DDD;
+}
+
+#gNavi li a {
+    display: block;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+#gNavi li a:hover {
+    background: #EEE;
+}
+#gNavi li.active a {
+    background: #333;
+    color: #EEE;
+}
+
+/* http://wwx.jp/css-navigation-menu */
