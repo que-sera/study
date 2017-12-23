@@ -1,5 +1,9 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    $(function(){
+<!DOCUTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    <script src="script.js">
         $("ul.ddmenu li").mouseenter(function(){
             $(this).siblings().find("ul").hide();
             $(this).children().slideDown(150);
@@ -8,4 +12,6 @@
             $('ul.ddmenu ul').slideUp(150);
         });    
     });
-</script>
+        </script>
+    </body>
+</html>
