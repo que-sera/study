@@ -1,9 +1,11 @@
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     $(function(){
-    $("ul.menu li").hover(function(){
-        $("ul.sub:not(:animated)", this).slideDown();
-    }, function(){
-        $("ul.sub",this).slideUp();
+        $("ul.ddmenu li").mouseenter(function(){
+            $(this).siblings().find("ul").hide();
+            $(this).children().slideDown(150);
+        });
+        $('html').click(function(){
+            $('ul.ddmenu ul').slideUp(150);
+        });    
     });
-});
 </script>
