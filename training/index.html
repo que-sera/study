@@ -23,7 +23,14 @@
             <li><a href="#">これから</a></li>
             <li><a href="#">お問い合わせ</a></li>
         </ul>
-        <script src="script.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js">
+            $(function(){
+		      $("ul.menu li").hover(function(){
+			  $("ul.sub:not(:animated)", this).slideDown();
+                }, function(){
+                  $("ul.sub",this).slideUp();
+		});
+	});
+        </script>
     </body>
 </html>
